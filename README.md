@@ -322,17 +322,6 @@ curl -X POST http://localhost:8000/process \
   -d '{"task": "Search for Python web frameworks"}'
 ```
 
-## 📊 Evaluation Criteria Coverage
-
-| Criterion | Score | Implementation |
-|-----------|-------|----------------|
-| Agent Design | 25/25 | Three distinct agents with clear separation of concerns |
-| LLM Usage | 20/20 | Structured prompts, JSON schemas, reasoning in Planner & Verifier |
-| API Integration | 20/20 | GitHub API and OpenWeather API with error handling |
-| Code Clarity | 15/15 | Clean structure, type hints, docstrings, comments |
-| Working Demo | 10/10 | CLI and API interfaces, runs locally |
-| Documentation | 10/10 | Comprehensive README, code comments, examples |
-| **TOTAL** | **100/100** | ✅ Exceeds pass score of 70 |
 
 ## 🎓 Key Design Decisions
 
@@ -356,18 +345,6 @@ curl -X POST http://localhost:8000/process \
 - **Partial Success**: System continues even if some steps fail
 - **Rich Logging**: Detailed progress information for debugging
 
-## 🚧 Future Enhancements
-
-Given more time, these features could be added:
-
-- [ ] **Caching**: Cache API responses to reduce redundant calls
-- [ ] **Cost Tracking**: Monitor LLM token usage and API costs
-- [ ] **Parallel Execution**: Run independent steps concurrently
-- [ ] **More Tools**: Add tools for databases, email, calendars, etc.
-- [ ] **Conversation Memory**: Maintain context across multiple tasks
-- [ ] **Web UI**: Build a web interface with step visualization
-- [ ] **Unit Tests**: Comprehensive test suite for all components
-- [ ] **Monitoring**: Add metrics and observability
 
 ## 🐛 Troubleshooting
 
@@ -387,10 +364,6 @@ Given more time, these features could be added:
 ### Import errors
 - Make sure you activated the virtual environment
 - Run `pip install -r requirements.txt` again
-
-## 📄 License
-
-This project is created as a 24-hour technical assignment.
 
 ## 🙋 Support
 
